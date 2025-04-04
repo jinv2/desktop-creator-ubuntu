@@ -1,9 +1,5 @@
 # 桌面文件创建助手 (Ubuntu) / Desktop Creator Tool (Ubuntu)
 
-[![天算AI Logo](placeholder.png)](https://your-website-or-profile.com) <!-- 暂时放一个占位符，或者直接去掉图片行 -->
-<!-- 你可以把上面这行图片占位符替换成你的 Logo 图片链接，或者直接删除 -->
-<!-- 例如，如果图片在仓库根目录叫 logo.png: ![天算AI Logo](logo.png) -->
-
 一个简单的图形界面小工具，可以通过输入命令在 Ubuntu 桌面上快速创建空的文本文档。带有 "天算AI" Logo。
 
 A simple GUI tool to quickly create empty text documents on the Ubuntu desktop via commands. Features the "天算AI" Logo.
@@ -18,10 +14,13 @@ A simple GUI tool to quickly create empty text documents on the Ubuntu desktop v
 
 ## 📸 截图 (Screenshot)
 
-<!-- 在这里可以放一张程序的运行截图 -->
-<!-- 例如: ![应用截图](screenshot.png) -->
-<!-- 你需要先截图，命名为 screenshot.png (或其它名字)，然后把它也添加到 Git 仓库 -->
-(添加一张程序运行时的截图会很有帮助！)
+以下是程序运行时的截图：
+
+![应用主界面截图](11.jpg)
+![创建文件成功截图](22.jpg)
+![文件已存在自动编号截图](33.jpg)
+
+*(截图展示了应用的主界面和基本操作效果)*
 
 ## 🚀 运行要求 (Requirements)
 
@@ -53,7 +52,7 @@ A simple GUI tool to quickly create empty text documents on the Ubuntu desktop v
 
 ### 从源代码运行 (From Source)
 
-1.  克隆或下载本仓库代码。
+1.  克隆本仓库代码:
     ```bash
     git clone https://github.com/jinvbar/desktop-creator-ubuntu.git
     cd desktop-creator-ubuntu
@@ -62,7 +61,7 @@ A simple GUI tool to quickly create empty text documents on the Ubuntu desktop v
     ```bash
     python3 -m venv venv  # 创建名为 venv 的虚拟环境
     source venv/bin/activate # 激活 (Bash/Zsh)
-    # 如果需要 PySocks: pip install PySocks
+    # 如果需要 PySocks (因为系统配置了 SOCKS 代理): pip install PySocks
     ```
 3.  运行脚本:
     ```bash
@@ -75,7 +74,9 @@ A simple GUI tool to quickly create empty text documents on the Ubuntu desktop v
 
 ### 使用打包版本 (Packaged Version)
 
-1.  从本仓库的 `dist/` 目录下载 `DesktopCreatorApp` 文件 (你需要先打包，或者从 Releases 下载，如果作者提供了的话)。
+*注意: 作者当前可能未提供预编译的打包版本，以下为通用说明。*
+
+1.  从本仓库的 Releases 页面下载 `DesktopCreatorApp` 文件 (如果作者提供了的话)，或者按照下面的“如何打包”步骤自己生成。
 2.  将文件放置在你想要的位置。
 3.  **添加执行权限:**
     ```bash
@@ -94,18 +95,16 @@ A simple GUI tool to quickly create empty text documents on the Ubuntu desktop v
 2.  安装必要的打包工具 (在虚拟环境中):
     ```bash
     pip install --upgrade pip
-    pip install PySocks  # 如果需要通过 SOCKS 代理下载
+    # 如果需要通过 SOCKS 代理下载，确保 PySocks 已安装
+    # pip install PySocks
     pip install pyinstaller
     ```
 3.  运行 PyInstaller 命令:
     ```bash
     pyinstaller --onefile --windowed --name DesktopCreatorApp desktop_creator.py
     ```
-4.  打包好的文件会出现在 `dist/` 目录下。
+4.  打包好的文件会出现在项目根目录下的 `dist/` 文件夹中。
 
 ## 📄 许可证 (License)
 
 本项目采用 **MIT 许可证** 发布。详情请参阅 [LICENSE](LICENSE) 文件。
-
-## 🙏 致谢 (Acknowledgements)
-

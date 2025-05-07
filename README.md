@@ -54,8 +54,8 @@ A simple GUI tool to quickly create empty text documents on the Ubuntu desktop v
 
 1.  克隆本仓库代码:
     ```bash
-    git clone https://github.com/jinvbar/desktop-creator-ubuntu.git
-    cd desktop-creator-ubuntu
+    git clone https://github.com/jinv2/desktop-creator-ubuntu.git # 如果您的仓库名不同，请修改
+    cd desktop-creator-ubuntu # 如果您的仓库名不同，请修改
     ```
 2.  **(强烈推荐)** 创建并激活 Python 虚拟环境:
     ```bash
@@ -104,6 +104,20 @@ A simple GUI tool to quickly create empty text documents on the Ubuntu desktop v
     pyinstaller --onefile --windowed --name DesktopCreatorApp desktop_creator.py
     ```
 4.  打包好的文件会出现在项目根目录下的 `dist/` 文件夹中。
+
+---
+## 💖 支持本项目 (Support This Project)
+
+如果您觉得这个 **桌面文件创建助手** 小工具对您有所帮助，或者您希望鼓励我分享更多类似的实用开源项目，欢迎通过以下方式表达您的支持：
+
+*   **通过 PayPal.Me 快速捐款给 天算AI：**
+    [https://paypal.me/jinv2](https://paypal.me/jinv2)
+
+    [![PayPal.Me Donate Button](https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/jinv2)
+
+您的每一个小小的支持，都是我继续创作和分享的动力！
+
+---
 
 ## 📄 许可证 (License)
 
